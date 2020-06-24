@@ -1,0 +1,40 @@
+ <div class="box-comments">
+            <div class="title-box-2">
+              <h6 class="title-comments title-left">Comments (34)</h6>
+            </div>
+            <ul class="list-comments">
+               @foreach (var x in @ViewBag.PageDetails.Comments)
+              {
+                    <li>
+                    <div class="comment-avatar">
+                      <img src=@x.Image alt="">
+                    </div>
+                    <div class="comment-details">
+                      <h4 class="comment-author">@x.FullName</h4>
+                      <span>@x.CreationDate</span>
+                      <p>
+                      @x.Text
+                      </p>
+                      <a href="3">Reply</a>
+                    </div>
+                  </li>
+                 
+                      @foreach (var y in @ViewBag.PageDetails.Comments)
+                      {
+                        <li class="comment-children">
+                        <div class="comment-avatar">
+                          <img src=@y.Image alt="">
+                        </div>
+                        <div class="comment-details">
+                          <h4 class="comment-author">@y.FullName</h4>
+                          <span>@x.CreationDate</span>
+                          <p>
+                          @y.Text
+                          </p>
+                          <a href="3">Reply</a>
+                        </div>
+                      </li>
+                      }
+              }
+            </ul>
+          </div>

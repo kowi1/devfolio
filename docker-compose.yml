@@ -1,0 +1,44 @@
+version: '3.4'
+
+services:
+  gtbweb:
+    image: ${DOCKER_REGISTRY-}gtbweb
+    build:
+      context: .
+      dockerfile: gtbweb/gtbweb/Dockerfile
+    ports: 
+      - '5002:80'
+
+  gtbweb.blazor:
+    image: ${DOCKER_REGISTRY-}gtbweb.blazor
+    build:
+      context: .
+      dockerfile: gtbweb.blazor/Dockerfile
+    ports: 
+      - '5001:80'  
+
+  gtbweb.identityserver:
+    image: ${DOCKER_REGISTRY-}gtbweb.identityserver
+    build:
+      context: .
+      dockerfile: gtbweb.IdentityServer/Dockerfile
+    ports: 
+      - '5000:80'  
+
+  gtbweb.test:
+    image: ${DOCKER_REGISTRY-}gtbweb.test
+    build:
+      context: .
+      dockerfile: gtbweb.test/Dockerfile   
+    ports: 
+      - '5004:80'  
+   
+
+  gtbweb.webapi:
+    image: ${DOCKER_REGISTRY-}gtbweb.webapi
+    build:
+      context: .
+      dockerfile: gtbweb.webapi/Dockerfile 
+    ports: 
+      - '5003:80'  
+  

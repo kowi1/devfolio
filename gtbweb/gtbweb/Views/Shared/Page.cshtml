@@ -1,0 +1,188 @@
+  @model gtbweb.Controllers.InputPageModel
+ 
+ @{
+    ViewData["Title"] = "Page";
+
+}
+ 
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-thumb">
+              <img src=@ViewBag.PageDetails.BlogImage class="img-fluid" alt=""><a asp-controller="Page" asp-action="Image" asp-route-id="@ViewBag.PageDetails.BlogPageID">Change</a>
+            </div>
+            <div class="post-meta">
+              <div class="row">
+                    <div class="col-md-10"> 
+                      <h1><span class="article-title">@ViewBag.PageDetails.Title</span></h1>
+                    </div>
+                    <div class="col-md-2"> 
+                      <h1><span><a href="#TitleForm" data-backdrop="false" data-toggle="modal" data-target="#TitleForm"><span class="glyphicon glyphicon-pencil"></span></span></h1>
+                    </div>
+               </div>
+              <ul>
+                <li>
+                  <span class="ion-ios-person"></span>
+                  <a href="#">@ViewBag.PageDetails.FullName</a>
+                </li>
+                <li>
+                  <span class="ion-pricetag"></span>
+                  <a href="#">
+                   WebSEX
+                </a>
+                </li>
+                <li>
+                  <span class="ion-chatbox"></span>
+                  <a href="#">@ViewBag.PageDetails.CommentCount</a>
+                </li>
+              </ul>
+            </div>
+            
+             <form  method="post" asp-action="Save" asp-controller="Page">
+               
+               <div class="form-group">
+                    <div class="article-content">@Html.Raw(@ViewBag.PageDetails.Text)</div>     
+                        <textarea type="hidden">  Welcome to your TinyMCE premium trial!</textarea>
+                        <div>
+                            <input asp-for="Pageid" type="hidden" value=@ViewBag.PageDetails.BlogPageID>
+                        </div>
+                        <div>
+                            <input asp-for="editor" type="hidden">
+                        </div>               
+                </div>             
+              
+                <div class="form-group">
+                  <div class="row">
+                       <div>
+                           <button id="SavePageEvent" type="submit" class="btn btnsubmit btn-success">Save </button>       
+                        </div>
+                        <div id="EditPageEvent"class="custom-control custom-switch">
+                             <input type="checkbox" class="custom-control-input btn btnsubmit btn-success" id="customSwitches">
+                             <label class="custom-control-label" for="customSwitches">Edit</label>
+                        </div>      
+                  </div>        
+                </div>
+               </form>
+          </div>
+        </div>
+        <div class="col-md-4">
+              <div class="widget-sidebar sidebar-search">
+                <h5 class="sidebar-title">Search</h5>
+                <div class="sidebar-content">
+                  <form  method="post" asp-action="Search" asp-controller="Page">
+                    <div class="form-group">
+                      <input asp-for="search" type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary btn-search" type="submit">
+                          <span class="ion-android-search"></span>
+                        </button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            
+              <div class="widget-sidebar">
+                    <h5 class="sidebar-title">Recent Post</h5>
+                    <div class="sidebar-content">
+                      <ul class="list-sidebar">
+                      @foreach (var x in @ViewBag.PageDetails.RecentPost)
+                      {
+                        <li>
+                          <a asp-area="" asp-controller="Page" asp-action="Page"  asp-route-id="@x.PostID">@x.Title</a>
+                        </li>
+                      }
+                      </ul>
+                    </div>
+              </div>
+                <div class="widget-sidebar">
+                  <div class="archives">
+                    <h5 class="sidebar-title">Archives</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                       <h6>By Date</h6>
+                        <div class="sidebar-content">
+                          <ul class="list-sidebar">
+                           @foreach (var x in @ViewBag.PageDetails.Archive.DateArchive)
+                      {
+                            <li>
+                              <a asp-controller="Archive" asp-action="SearchDateArchive" asp-route-id="@x.DateArchiveID">@x.DateArchiveName</a>
+                            </li>
+                      }
+                            
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h6>By Category</h6>
+                          <div class="sidebar-content">
+                            <ul class="list-sidebar">
+                                    @foreach (var x in @ViewBag.PageDetails.Archive.CategoryArchive)
+                      {
+                            <li>
+                              <a asp-controller="Archive" asp-action="SearchCategoryArchive" asp-route-id="@x.CategoryArchiveID">@x.CategoryName</a>
+                            </li>
+                      }
+                            </ul>
+                          </div>
+                      </div>
+                    </div>
+                    <div class=" widget-tags">
+                      <h6>By Tags</h6>
+                      <div class="sidebar-content">
+                        <ul>
+                          @foreach (var x in @ViewBag.PageDetails.TagCollection.TagList)
+                        {
+                          <li>
+                            <a href="https://localhost:5002/Page/Page">@x.Title</a>
+                          </li>
+                        }
+                        </ul>
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+        </div>
+      </div>
+    </div>
+    <div id="TitleForm" class="modal fade" >
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title">Edit</h1>
+                              </div>
+                              <div class="modal-body">
+                                  <form  method="post" asp-action="SaveTitle" asp-controller="Page">
+                                      <input type="hidden" name="_token" value="">
+                                      <div class="form-group">
+                                          <label class="control-label">Blog Title </label>
+                                          <div>
+                                              <input asp-for="Title" type="textarea" rows="4" cols="50" class="form-control input-lg">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div>
+                                              <button type="submit" class="btn btn-success">
+                                                  Save
+                                              </button>
+                                              <button type="button" class="btn btn-default pull-right btn-danger" data-dismiss="modal">Close</button>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group">
+                                       <div>
+                                        <input asp-for="Pageid" type="hidden" value=@ViewBag.PageDetails.BlogPageID>
+                                     </div>
+                                     </div>
+                                  </form>
+                              </div>
+                          </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+             
+  </section>
+  <!--/ Section Blog-Single End /-->
+  

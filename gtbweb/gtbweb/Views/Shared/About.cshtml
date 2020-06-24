@@ -1,0 +1,198 @@
+ 
+ @model gtbweb.Controllers.InputModel
+ @{
+    ViewData["Title"] = "About";
+}
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src= @ViewBag.ProfileDetails.Image class="img-fluid b-shadow-a rounded-circle avatar-xl" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-b"></span> <span>@ViewBag.ProfileDetails.FirstName @ViewBag.ProfileDetails.LastName</span></p>
+                      <p><span class="title-s"></span> <span>@ViewBag.ProfileDetails.Designation     </span> <a href="#DesignationForm" data-backdrop="false" data-toggle="modal" data-target="#DesignationForm"><span class="glyphicon glyphicon-pencil"></span></a><p>
+                      <p><span class="title-s"></span> <span>@User.Identity.Name</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                 <div class="title-s">
+                   <div class="row">
+                     <div class="col-sm-3">
+                     <p class="title-s">Skill</p>
+                     </div>
+                     <div class="col-sm-3">
+                     <a  href="#SkillForm" data-backdrop="false" data-toggle="modal" data-target="#SkillForm">Add</a>
+                     </div>
+                   </div>
+                </div>
+ @foreach(var x in @ViewBag.ProficiencyList)
+      {
+                  <span>@x.Skill</span> <span class="pull-right">@x.Score%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: @x.Score%;" aria-valuenow=@x.Score aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+      }
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About me
+                    </h5>
+                  </div>
+                  
+                  <form  method="post" asp-action="SaveAbout" asp-controller="About">
+                   <input type="hidden" name="_token" value="">
+
+               <div class="form-group">
+                  <div class="lead">
+                    @Html.Raw(@ViewBag.ProfileDetails.About)
+                  </div>
+                  <textarea type="hidden">  Welcome to your TinyMCE premium trial!</textarea>
+      
+                        <div>
+                            <input asp-for="About" type="hidden">
+                        </div>  
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                       <div>
+                           <button id="SaveAboutEvent" type="submit" class="btn btnsubmit btn-success">Save </button>       
+                        </div>
+                        <div id="EditAboutEvent"class="custom-control custom-switch">
+                             <input type="checkbox" class="custom-control-input btn btnsubmit btn-success" id="customSwitches">
+                             <label class="custom-control-label" for="customSwitches">Edit</label>
+                        </div>      
+                  </div>        
+                </div>
+                </form>
+
+
+
+
+                  <div id="ModalLoginForm" class="modal fade" >
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title">Edit</h1>
+                              </div>
+                              <div class="modal-body">
+                               
+                                  <form  method="post" asp-action="SaveAbout" asp-controller="About">
+                                      <input type="hidden" name="_token" value="">
+                                      <div class="form-group">
+                                          <label class="control-label">About</label>
+                                          <div class="article-content">
+                                      @Html.Raw(@ViewBag.ProfileDetails.About)
+                                     </div>  
+                                          <div >
+                                              <input asp-for="About" type="hidden">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div>
+                                              <button type="submit" class="btn btn-success">
+                                                  Save
+                                              </button>
+                                              <button type="button" class="btn btn-default pull-right btn-danger" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                               
+                                  </form>
+                              </div>
+                          </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+                  <div id="DesignationForm" class="modal fade" >
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title">Edit</h1>
+                              </div>
+                              <div class="modal-body">
+                                  <form  method="post" asp-action="SaveDesignation" asp-controller="About">
+                                      <input type="hidden" name="_token" value="">
+                                      <div class="form-group">
+                                          <label class="control-label">Designation</label>
+                                          <div>
+                                              <input asp-for="Designation" type="textarea" rows="4" cols="50" class="form-control input-lg">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div>
+                                              <button type="submit" class="btn btn-success">
+                                                  Save
+                                              </button>
+                                              <button type="button" class="btn btn-default pull-right btn-danger" data-dismiss="modal">Close</button>
+                                          </div>
+                                          
+                                      </div>
+                                  </form>
+                              </div>
+                          </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+                  <div id="SkillForm" class="modal fade"  > 
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title">Skills</h1>
+                              </div>
+                              <div class="modal-body">
+                                  <form  method="post" asp-action="SaveProficiency" asp-controller="About">
+                                      <input type="hidden" name="_token" value="">
+                                      <div class="form-group">
+                                          
+                                          
+                                          <div class="row">
+                                            
+                                              <div class="col-md-5">
+                                                  <label class="control-label">Add a Skill</label>
+                                                   <select asp-for="Skill" asp-items="@ViewBag.SkillList" class="form-control input-lg"></select>
+                                              </div>
+                                                <div class="col-md-6">
+                                                   <label class="control-label">Add a Score</label>
+                                                   <input asp-for="Score" type="text" rows="4" cols="50" class="form-control input-lg">
+                                              </div>
+                                         
+                                          </div>
+                                          
+                                     </div>
+                                      <div class="form-group">
+                                          <div>
+                                              <button type="submit" class="btn btn-success">
+                                                  Save
+                                              </button>
+                                              <button type="button" class="btn btn-default pull-right btn-danger" data-dismiss="modal">Close</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

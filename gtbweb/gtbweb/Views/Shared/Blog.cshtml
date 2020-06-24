@@ -1,0 +1,81 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Blog";
+}
+  <section id="blog" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Blogs
+            </h3>
+            <p class="subtitle-a">
+             @ViewBag.BlogCollection.Slogan
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+                  @if (SignInManager.IsSignedIn(User))
+{
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a class="nav-link js-scroll"  asp-area="" asp-controller="Blog" asp-action="Create"><span class="glyphicon glyphicon-plus add-post"></span></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Add Post</h6>
+                </div>
+              </div>
+              
+            </div>
+           
+          </div>
+        </div>
+}
+      @foreach(var x in @ViewBag.BlogCollection.BlogView)
+      {
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a class="nav-link js-scroll blog-@x.BlogPageID"  asp-area="" asp-controller="Page" asp-action="Page" asp-route-id="@x.BlogPageID"><img src=@x.BlogImage alt="" class="img-fluid blog-card"></a>
+            </div>
+            
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">@x.PageTag</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a class="nav-link js-scroll title-card"  asp-area="" asp-controller="Page" asp-action="Page" asp-route-id="@x.BlogPageID">@x.Title</a></h3>
+              <p class="card-description ">
+                <div class="str-@x.BlogPageID description-text" value = @x.BlogPageID>
+               @Html.Raw(@x.Text)
+              </div>
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="~/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">@x.FullName</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> @x.ReadTime min
+              </div>
+            </div>
+          </div>
+        </div>
+    }
+  
+      </div>
+    </div>
+  </section>

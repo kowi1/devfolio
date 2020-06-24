@@ -1,0 +1,34 @@
+@page "/client"
+
+@using Newtonsoft.Json
+@using RestSharp
+@using System.Net
+@using System.Net.Http.Headers
+@using IdentityModel.Client
+
+<h1>Get Profile</h1>
+<p>Result: @c</p>
+
+@code {
+
+      String c;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var restClient = new HttpClient();
+        var disco= await restClient.GetDiscoveryDocumentAsync("http://localhost:5008/");
+        
+        var tokenresponse = await restClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
+        {
+            Address = disco.TokenEndpoint,
+            ClientId="client1",
+            ClientSecret="d0505cb2ce394abe8b0c235d31b6a5f5",
+            Scope="api1"
+        });
+        restClient.SetBearerToken(tokenresponse.AccessToken);
+       
+        var response=await restClient.GetAsync("http://localhost:5003/api/profile/");
+        c = response.Content.ReadAsStringAsync().Result;
+        
+    }
+}

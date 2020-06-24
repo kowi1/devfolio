@@ -1,0 +1,42 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item dropdown dropdown-animate">
+        <a  class="nav-link text-dark" data-toggle="dropdown" title="Manage"><img src="~/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+           <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right dropdown-menu-arrow">
+                  <h6 class="dropdown-header px-0">Hi, Deji!</h6>
+                  <a class="dropdown-item"  asp-area="" asp-controller="About" asp-action="About">
+           
+                    <span>My profile</span>
+                   </a>
+
+                  <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index">
+                    
+                    <span>Settings</span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                    <form  class="form-inline dropdown-item" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <i class="far fa-sign-out-alt"></i>
+                    <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                    </form>
+                  </div>
+            </a>
+    </li>
+    <li class="nav-item">
+        
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </li>
+}
+</ul>

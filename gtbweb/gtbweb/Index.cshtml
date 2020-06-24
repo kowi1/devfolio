@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+ 
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          @if (SignInManager.IsSignedIn(User))
+{
+       <!--<h1 class="intro-title mb-4">I am @User.Identity.Name</h1>-->
+}
+else
+{
+       <h1 class="intro-title mb-4">Get all Your Creative Works in one Portfolio.   </h1>
+       <h4 class="intro-subtitle mb-4">Easy to update. Easy to Share.</h4>
+       <a class="btn btn-primary" href="https://localhost:5002/Identity/Account/Register">Register Now</a>
+}
+          
+          <p class="intro-subtitle"><span class="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+
+
+  
+  <!--/ Section Services End /-->
+
+  
+  <!--/ Section Contact-Footer Star /-->
+  
+    
+      

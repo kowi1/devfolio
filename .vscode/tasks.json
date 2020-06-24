@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                //"${workspaceFolder}/gtbweb/gtbweb/gtbweb.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

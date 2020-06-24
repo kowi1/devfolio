@@ -1,0 +1,191 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+
+    <!-- Syncfusion Essential JS 2 Scripts -->
+   
+    <link href="~/img/favicon.png" rel="icon">
+  <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="~/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="~/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="~/lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="~/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  
+
+  <!-- Main Stylesheet File -->
+  <link href="~/css/style.css" rel="stylesheet"> <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+      <script src="https://cdn.tiny.cloud/1/t8nclcxah20j02f3shk349lrk28yqlcngxskchwnklytom3x/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+     <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div id="page-top">
+      
+    <nav class="navbar navbar-b navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top" id="mainNav">
+    <div class="container">
+          @if (SignInManager.IsSignedIn(User))
+{
+      <a class="navbar-brand js-scroll" asp-area="" asp-controller="Video" asp-action="Video">DevFolio</a>
+}
+else{
+      <a class="navbar-brand js-scroll"  asp-area="" asp-controller="Home" asp-action="Index">DevFolio</a>
+}
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+              @if (SignInManager.IsSignedIn(User))
+{
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav flex-grow-1">
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll"  asp-area="" asp-controller="Video" asp-action="Video">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll"  asp-area="" asp-controller="Blog" asp-action="Blog">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll"  asp-area="" asp-controller="Contact" asp-action="Contact">Contact</a>
+          </li>
+        </ul>
+        <partial name="_LoginPartial" />
+      </div>
+}
+else
+{
+    <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        
+        <partial name="_LoginPartial" />
+      </div>
+}
+    </div>
+  </nav>
+        
+    </div>
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - gtbweb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <footer>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- JavaScript Libraries -->
+  <script src="~/lib/jquery/jquery.min.js"></script>
+  <script src="~/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="~/lib/popper/popper.min.js"></script>
+  <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="~/lib/easing/easing.min.js"></script>
+  <script src="~/lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="~/lib/counterup/jquery.counterup.js"></script>
+  <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="~/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="~/lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="~/contactform/contactform.js"></script>
+  <script type="text/javascript">
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+   </script>
+   <script>
+    tinymce.init({
+    selector: 'textarea',
+      toolbar_drawer: 'floating',
+    });
+  </script>
+  <!-- Template Main Javascript File -->
+  <script src="~/js/main.js"></script>
+
+    <ejs-scripts></ejs-scripts>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

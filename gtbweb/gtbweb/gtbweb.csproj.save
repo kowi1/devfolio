@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+ <IdentityUIFrameworkVersion>Bootstrap4</IdentityUIFrameworkVersion> 
+  <UserSecretsId>aspnet-gtbweb-3C0210EE-33B3-4F94-829C-76BC907949FA</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="Mailkit" Version="2.1.3" />   
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.3" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="piranha" Version="6.1.0" />
+    <PackageReference Include="RestSharp" Version="106.6.9" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="16.4.0.54" />
+    <PackageReference Include="unsplasharp.api" Version="0.5.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="2.    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+   
+  </ItemGroup>
+</Project>

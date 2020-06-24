@@ -1,0 +1,136 @@
+ @model gtbweb.Controllers.InputSearchModel
+
+ @{
+    ViewData["Title"] = "Page";
+
+}
+ 
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-thumb">
+            </div>
+            <div class="post-meta">
+              <h1><span class="article-title">Search Result</span><span class="glyphicon glyphicon-pencil"></span></h1>
+                <div class="sidebar-content">
+                  <form  method="post" asp-action="Search" asp-controller="Search">
+                    <div class="form-group">
+                      <input asp-for="search" type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary btn-search" type="submit">
+                          <span class="ion-android-search"></span>
+                        </button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <div class="article-content">
+              <div class="row sidebar-content">
+                  <ul>
+                  @foreach(var x in @ViewBag.BlogCollection.BlogView)
+                  {
+                      <li>
+                      <div class="search-item sect-pt4">
+                        <div class="search-item-img">
+                          <a class="nav-link js-scroll blog-@x.BlogPageID"  asp-area="" asp-controller="Page" asp-action="Page" asp-route-id="@x.BlogPageID"></a>
+                        </div>
+                        
+                        <div class="search-body">
+                          
+                          <h3 class="search-title"><a class="nav-link js-scroll"  asp-area="" asp-controller="Page" asp-action="Page" asp-route-id="@x.BlogPageID">@x.Title</a></h3>
+                          <p class="search-description">
+                          <div class="searchstr-@x.BlogPageID search-description" value = @x.BlogPageID>
+                              
+                          @Html.Raw(@x.Text)
+                          </div>
+                          <script type='text/javascript'>
+                              $(document).ready(function(){
+                              
+                              });
+                          </script>
+                          </p>
+                        </div>
+                        <div class="row search-footer">
+                          <div class="col-md-6 post-author">
+                            <a href="#">
+                              <img src="~/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                              <span class="author">@x.FullName</span>
+                            </a>
+                          </div>
+                          <div class="col-d-6 post-date">
+                            <span class="ion-ios-clock-outline"></span> @x.ReadTime min
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                }
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+              <div class="widget-sidebar">
+                 <h5 class="sidebar-title">Recent Post</h5>
+                 <div class="sidebar-content">
+                      <ul class="list-sidebar">   
+                              <li>
+                                <a href="#">Desktop Publishing</a>
+                              </li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="widget-sidebar">
+                  <div class="archives">
+                    <h5 class="sidebar-title">Archives</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                       <h6>By Date</h6>
+                        <div class="sidebar-content">
+                          <ul class="list-sidebar">
+                                 @foreach (var x in @ViewBag.BlogCollection.BlogView[0].Archive.DateArchive)
+                      {
+                            <li>
+                              <a href="#">@x.DateArchiveName</a>
+                            </li>
+                      }
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h6>By Category</h6>
+                          <div class="sidebar-content">
+                            <ul class="list-sidebar">
+                                            @foreach (var x in @ViewBag.BlogCollection.BlogView[0].Archive.CategoryArchive)
+                      {
+                            <li>
+                              <a href="#">@x.CategoryName</a>
+                            </li>
+                      }
+                            </ul>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="widget-tags">
+                      <h6>By Tags</h6>
+                      <div class="sidebar-content">
+                        <ul>
+                           <li>
+                                <a href="#">Desktop Publishing</a>
+                           </li>
+                        </ul>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+              </div>
+        </div>
+      
+    </div>          
+  </section>
+  <!--/ Section Blog-Single End /-->
+  

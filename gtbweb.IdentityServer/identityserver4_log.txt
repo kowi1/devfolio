@@ -1,0 +1,959 @@
+2019-03-17 14:42:13.509 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-17 14:42:15.883 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-03-17 14:42:15.886 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-03-17 14:42:15.889 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-03-17 14:42:15.892 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-03-17 14:42:15.904 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-03-17 14:42:15.906 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-03-17 14:42:15.909 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-03-17 14:43:42.532 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-03-17 14:46:45.348 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-03-17 14:59:44.998 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-17 14:59:47.847 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-03-17 14:59:47.850 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-03-17 14:59:47.854 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-03-17 14:59:47.857 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-03-17 14:59:47.860 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-03-17 14:59:47.870 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-03-17 14:59:47.873 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-03-17 15:00:44.203 +01:00 [DBG] 0 persisted grants found for Community
+2019-03-17 15:01:01.615 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-03-17 15:04:19.367 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-03-17 15:04:26.133 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-03-17 15:08:30.989 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-03-17 15:11:02.294 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-03-17 15:31:54.537 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-03-24 10:51:20.646 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-24 10:51:23.619 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-03-24 10:51:23.620 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-03-24 10:51:23.621 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-03-24 10:51:23.622 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-03-24 10:51:23.623 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-03-24 10:51:23.624 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-03-24 10:51:23.625 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-03-24 11:10:58.887 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-24 11:11:02.586 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-03-24 11:11:02.589 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-03-24 11:11:02.593 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-03-24 11:11:02.595 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-03-24 11:11:02.597 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-03-24 11:11:02.614 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-03-24 11:11:02.615 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-05-01 17:40:54.642 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-05-01 17:40:57.265 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-05-01 17:40:57.268 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-05-01 17:40:57.272 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-05-01 17:40:57.276 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-05-01 17:40:57.280 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-05-01 17:40:57.283 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-05-01 17:40:57.285 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-05-31 09:01:59.650 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-05-31 09:02:02.614 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-05-31 09:02:02.616 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-05-31 09:02:02.617 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-05-31 09:02:02.617 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-05-31 09:02:02.618 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-05-31 09:02:02.618 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-05-31 09:02:02.619 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-05-31 13:12:16.225 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-05-31 13:12:16.225 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-05-31 19:53:09.657 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-06-01 17:10:11.445 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-06-01 17:10:11.445 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-10-20 08:24:24.064 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-20 08:24:27.759 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-20 08:24:27.761 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-20 08:24:27.762 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-20 08:24:27.763 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-20 08:24:27.764 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-20 08:24:27.764 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-20 08:24:27.765 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-21 08:38:04.399 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-21 08:38:08.035 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-21 08:38:08.040 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-21 08:38:08.045 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-21 08:38:08.056 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-21 08:38:08.060 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-21 08:38:08.071 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-21 08:38:08.074 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-21 08:39:36.840 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 10:19:22.660 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-21 10:19:25.591 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-21 10:19:25.593 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-21 10:19:25.593 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-21 10:19:25.594 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-21 10:19:25.596 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-21 10:19:25.597 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-21 10:19:25.598 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-21 10:25:46.100 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 10:25:48.239 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 10:28:44.886 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 16:31:01.874 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-21 16:31:05.082 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-21 16:31:05.084 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-21 16:31:05.085 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-21 16:31:05.087 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-21 16:31:05.091 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-21 16:31:05.105 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-21 16:31:05.110 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-21 16:51:09.386 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:27:49.789 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:27:50.676 +01:00 [DBG] client found in database: false
+2019-10-21 17:30:23.556 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:30:23.582 +01:00 [DBG] client found in database: false
+2019-10-21 17:30:29.833 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:30:29.862 +01:00 [DBG] client found in database: false
+2019-10-21 17:30:37.031 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:30:37.057 +01:00 [DBG] client found in database: false
+2019-10-21 17:30:43.033 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:30:43.055 +01:00 [DBG] client found in database: false
+2019-10-21 17:33:32.733 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:33:33.151 +01:00 [DBG] client found in database: false
+2019-10-21 17:33:50.052 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:33:50.079 +01:00 [DBG] client found in database: false
+2019-10-21 17:33:52.911 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:33:52.941 +01:00 [DBG] client found in database: false
+2019-10-21 17:34:03.154 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:34:03.188 +01:00 [DBG] client found in database: false
+2019-10-21 17:34:05.158 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:34:05.217 +01:00 [DBG] client found in database: false
+2019-10-21 17:42:22.644 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:42:22.977 +01:00 [DBG] client found in database: false
+2019-10-21 17:42:25.161 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:42:25.198 +01:00 [DBG] client found in database: false
+2019-10-21 17:42:29.567 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:42:29.592 +01:00 [DBG] client found in database: false
+2019-10-21 17:42:31.183 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:42:31.211 +01:00 [DBG] client found in database: false
+2019-10-21 17:43:18.772 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:43:18.837 +01:00 [DBG] client found in database: false
+2019-10-21 17:43:20.332 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:43:20.372 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:32.092 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:32.131 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:33.898 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:33.960 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:41.467 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:41.528 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:43.579 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:43.626 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:48.352 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:48.413 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:50.399 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:50.435 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:53.611 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:53.640 +01:00 [DBG] client found in database: false
+2019-10-21 17:44:54.909 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:44:54.950 +01:00 [DBG] client found in database: false
+2019-10-21 17:45:05.443 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:45:05.529 +01:00 [DBG] client found in database: false
+2019-10-21 17:45:07.174 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:45:07.236 +01:00 [DBG] client found in database: false
+2019-10-21 17:45:11.181 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:45:11.214 +01:00 [DBG] client found in database: false
+2019-10-21 17:45:12.540 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:45:12.605 +01:00 [DBG] client found in database: false
+2019-10-21 17:47:22.071 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-21 17:47:24.993 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-21 17:47:24.997 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-21 17:47:25.002 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-21 17:47:25.014 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-21 17:47:25.018 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-21 17:47:25.027 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-21 17:47:25.035 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-21 17:49:26.698 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:49:27.648 +01:00 [DBG] client1 found in database: false
+2019-10-21 17:49:30.073 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:49:30.300 +01:00 [DBG] client1 found in database: false
+2019-10-21 17:49:48.320 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:49:48.351 +01:00 [DBG] client1 found in database: false
+2019-10-21 17:49:50.119 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:49:50.157 +01:00 [DBG] client1 found in database: false
+2019-10-21 17:55:04.436 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-21 17:55:06.715 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-21 17:55:06.719 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-21 17:55:06.722 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-21 17:55:06.726 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-21 17:55:06.734 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-21 17:55:06.737 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-21 17:55:06.745 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-21 17:55:30.470 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:55:31.168 +01:00 [DBG] client1 found in database: false
+2019-10-21 17:55:32.600 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 17:55:32.932 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:02:53.672 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:02:59.545 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:08:01.074 +01:00 [DBG] 0 persisted grants found for Community
+2019-10-21 18:08:10.792 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:08:14.131 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:28.989 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:29.021 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:13:31.175 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:31.225 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:13:37.038 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:37.111 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:13:38.819 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:38.902 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:13:46.203 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:46.300 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:13:47.901 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:47.935 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:13:57.334 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:57.364 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:13:58.935 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 18:13:58.978 +01:00 [DBG] client1 found in database: false
+2019-10-21 18:57:25.058 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-21 18:57:27.856 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-21 18:57:27.857 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-21 18:57:27.858 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-21 18:57:27.858 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-21 18:57:27.861 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-21 18:57:27.864 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-21 18:57:27.884 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-21 18:57:47.987 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:05:41.575 +01:00 [DBG] 0 persisted grants found for Community
+2019-10-21 19:05:53.147 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:07:14.294 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:23:50.517 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:23:51.762 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:23:51.786 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:23:54.722 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:23:54.770 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:23:54.776 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:28:29.470 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:28:29.512 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:28:29.519 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:28:29.730 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:28:29.884 +01:00 [DBG] Found [] API scopes in database
+2019-10-21 19:28:32.080 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:28:32.180 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:28:32.186 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:28:32.206 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:28:32.227 +01:00 [DBG] Found [] API scopes in database
+2019-10-21 19:31:23.162 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:31:23.191 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:31:23.195 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:31:23.208 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:31:23.220 +01:00 [DBG] Found [] API scopes in database
+2019-10-21 19:31:25.165 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks"] as all scopes in database
+2019-10-21 19:31:25.216 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:31:25.225 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:31:25.245 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:31:25.304 +01:00 [DBG] Found [] API scopes in database
+2019-10-21 19:40:48.203 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:40:48.560 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:40:48.565 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:40:48.578 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:40:48.634 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:40:51.130 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:40:51.166 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:40:51.170 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:40:51.185 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:40:51.228 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:41:46.384 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:41:46.414 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:41:46.415 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:41:46.423 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:41:46.435 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:41:49.140 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:41:49.575 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:41:49.589 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:41:49.618 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:41:49.658 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:43:07.143 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:43:07.194 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:43:07.198 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:43:07.212 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:43:07.227 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:43:07.258 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:43:07.275 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:43:08.520 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:43:16.011 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:43:16.061 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:43:16.085 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:43:16.108 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:43:16.163 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:43:16.207 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:43:16.228 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:44:40.620 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:44:40.673 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:44:40.679 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:44:40.691 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:44:40.707 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:44:40.719 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:44:40.740 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:44:42.719 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:44:42.814 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:44:42.845 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:44:42.870 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:44:42.904 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:44:42.953 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:44:42.995 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:46:56.894 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:46:56.935 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:46:56.938 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:46:56.945 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:46:56.958 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:46:56.965 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:46:56.979 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:48:15.331 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:48:15.350 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:48:15.353 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:48:15.362 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:48:15.376 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:48:15.386 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:48:15.399 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:48:31.157 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:48:31.204 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:48:31.215 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:48:31.240 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:48:31.277 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:48:31.290 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:48:31.309 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:48:33.480 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:48:33.509 +01:00 [DBG] client1 found in database: true
+2019-10-21 19:48:33.512 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 19:48:33.521 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:48:33.537 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:48:33.552 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 19:48:33.569 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 19:49:57.430 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 19:52:00.890 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:25:34.201 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:25:34.230 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:25:34.232 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:25:34.243 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:25:34.256 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:25:34.264 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:25:34.276 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:25:35.526 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:25:35.552 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:25:35.555 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:25:35.575 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:25:35.590 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:25:35.600 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:25:35.614 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:26:25.478 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:26:25.501 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:26:25.503 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:26:25.509 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:26:25.522 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:26:25.529 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:26:25.541 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:26:32.126 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:26:32.146 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:26:32.148 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:26:32.155 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:26:32.164 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:26:32.173 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:26:32.182 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:26:50.708 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:26:50.726 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:26:50.728 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:26:50.736 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:26:50.745 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:26:50.752 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:26:50.761 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:27:48.200 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:27:48.236 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:27:48.241 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:27:48.255 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:27:48.275 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:27:48.286 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:27:48.323 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:29:18.533 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:29:18.556 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:29:18.559 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:29:18.566 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:29:18.576 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:29:18.582 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:29:18.592 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:29:24.335 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-21 20:29:24.363 +01:00 [DBG] client1 found in database: true
+2019-10-21 20:29:24.366 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-21 20:29:24.375 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:29:24.384 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-21 20:29:24.391 +01:00 [DBG] Found [] identity scopes in database
+2019-10-21 20:29:24.400 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:27:13.913 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-22 10:27:16.707 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-22 10:27:16.712 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-22 10:27:16.724 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-22 10:27:16.730 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-22 10:27:16.739 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-22 10:27:16.743 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-22 10:27:16.747 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-22 10:28:28.633 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-22 10:28:29.972 +01:00 [DBG] client1 found in database: true
+2019-10-22 10:28:29.997 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-22 10:28:30.305 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:30.455 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:28:30.493 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:30.512 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:28:32.008 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-22 10:28:32.050 +01:00 [DBG] client1 found in database: true
+2019-10-22 10:28:32.054 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-22 10:28:32.080 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:32.106 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:28:32.123 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:32.157 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:28:38.487 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-22 10:28:38.510 +01:00 [DBG] client1 found in database: true
+2019-10-22 10:28:38.514 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-22 10:28:38.523 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:38.540 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:28:38.551 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:38.566 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:28:44.397 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-22 10:28:44.423 +01:00 [DBG] client1 found in database: true
+2019-10-22 10:28:44.428 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-22 10:28:44.439 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:44.453 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-22 10:28:44.464 +01:00 [DBG] Found [] identity scopes in database
+2019-10-22 10:28:44.478 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-23 01:37:00.590 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-23 01:37:03.342 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-23 01:37:03.344 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-23 01:37:03.345 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-23 01:37:03.346 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-23 01:37:03.347 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-23 01:37:03.347 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-23 01:37:03.348 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-23 03:30:19.410 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-23 03:30:21.396 +01:00 [DBG] client1 found in database: true
+2019-10-23 03:30:21.432 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-23 03:30:21.982 +01:00 [DBG] Found [] identity scopes in database
+2019-10-23 03:30:22.118 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-23 03:30:22.151 +01:00 [DBG] Found [] identity scopes in database
+2019-10-23 03:30:22.164 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-23 03:30:25.054 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-23 03:30:29.534 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-23 03:30:29.602 +01:00 [DBG] client1 found in database: true
+2019-10-23 03:30:29.611 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-23 03:30:29.637 +01:00 [DBG] Found [] identity scopes in database
+2019-10-23 03:30:29.690 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-23 03:30:29.719 +01:00 [DBG] Found [] identity scopes in database
+2019-10-23 03:30:29.779 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-23 15:14:45.071 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-23 15:14:48.231 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-23 15:14:48.233 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-23 15:14:48.234 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-23 15:14:48.235 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-23 15:14:48.236 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-23 15:14:48.236 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-23 15:14:48.237 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-23 15:24:29.642 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-23 15:24:31.840 +01:00 [DBG] client1 found in database: true
+2019-10-23 15:24:31.878 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-23 15:24:32.414 +01:00 [DBG] Found [] identity scopes in database
+2019-10-23 15:24:32.649 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-23 15:24:32.685 +01:00 [DBG] Found [] identity scopes in database
+2019-10-23 15:24:32.701 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-23 15:24:35.898 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-23 16:05:57.006 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-23 16:05:59.652 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-23 16:05:59.653 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-23 16:05:59.653 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-23 16:05:59.653 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-23 16:05:59.653 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-23 16:05:59.654 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-23 16:05:59.654 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-23 16:10:27.745 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-23 16:10:30.178 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-23 16:10:30.178 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-23 16:10:30.179 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-23 16:10:30.179 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-23 16:10:30.179 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-23 16:10:30.179 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-23 16:10:30.180 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-23 16:13:20.735 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-23 16:57:17.083 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-10-23 16:57:18.930 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-25 17:51:51.493 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-25 17:51:54.856 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-25 17:51:54.857 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-25 17:51:54.858 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-25 17:51:54.858 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-25 17:51:54.859 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-25 17:51:54.859 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-25 17:51:54.860 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-25 17:54:49.684 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-25 17:56:53.830 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-25 17:56:55.888 +01:00 [DBG] client1 found in database: true
+2019-10-25 17:56:55.905 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-25 17:56:56.486 +01:00 [DBG] Found [] identity scopes in database
+2019-10-25 17:56:56.616 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-25 17:56:56.640 +01:00 [DBG] Found [] identity scopes in database
+2019-10-25 17:56:56.649 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-25 17:56:59.342 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-25 18:01:53.411 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-25 18:01:53.473 +01:00 [DBG] client1 found in database: true
+2019-10-25 18:01:53.474 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-25 18:01:53.486 +01:00 [DBG] Found [] identity scopes in database
+2019-10-25 18:01:53.507 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-25 18:01:53.515 +01:00 [DBG] Found [] identity scopes in database
+2019-10-25 18:01:53.531 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:23:23.305 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-28 15:23:24.376 +01:00 [DBG] client1 found in database: true
+2019-10-28 15:23:24.377 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-28 15:23:24.625 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:23:24.633 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:23:24.637 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:23:24.644 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:23:25.713 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-28 15:24:20.212 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-28 15:24:20.247 +01:00 [DBG] client1 found in database: true
+2019-10-28 15:24:20.247 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-28 15:24:20.253 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:24:20.261 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:24:20.266 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:24:20.274 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:24:25.097 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-28 15:24:25.121 +01:00 [DBG] client1 found in database: true
+2019-10-28 15:24:25.121 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-28 15:24:25.130 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:24:25.140 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:24:25.144 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:24:25.151 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:26:44.360 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-28 15:26:44.387 +01:00 [DBG] client1 found in database: true
+2019-10-28 15:26:44.388 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-28 15:26:44.393 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:26:44.404 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:26:44.409 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:26:44.417 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:28:40.301 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-28 15:28:40.324 +01:00 [DBG] client1 found in database: true
+2019-10-28 15:28:40.325 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-28 15:28:40.331 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:28:40.342 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-28 15:28:40.349 +01:00 [DBG] Found [] identity scopes in database
+2019-10-28 15:28:40.358 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-31 12:54:38.103 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-10-31 12:54:41.665 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-10-31 12:54:41.666 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-10-31 12:54:41.667 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-10-31 12:54:41.667 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-10-31 12:54:41.668 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-10-31 12:54:41.669 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-10-31 12:54:41.669 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-10-31 13:44:05.906 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-10-31 13:44:07.759 +01:00 [DBG] client1 found in database: true
+2019-10-31 13:44:07.791 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-10-31 13:44:08.271 +01:00 [DBG] Found [] identity scopes in database
+2019-10-31 13:44:08.468 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-31 13:44:08.503 +01:00 [DBG] Found [] identity scopes in database
+2019-10-31 13:44:08.516 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-10-31 13:44:10.587 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 08:05:10.530 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-03 08:05:13.485 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-11-03 08:05:13.485 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-11-03 08:05:13.486 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-11-03 08:05:13.486 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-11-03 08:05:13.486 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-11-03 08:05:13.487 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-11-03 08:05:13.487 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-11-03 08:07:40.659 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 08:07:42.504 +01:00 [DBG] client1 found in database: true
+2019-11-03 08:07:42.536 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 08:07:42.968 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 08:07:43.165 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 08:07:43.205 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 08:07:43.223 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 08:07:46.539 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 08:07:57.158 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 08:07:57.262 +01:00 [DBG] client1 found in database: true
+2019-11-03 08:07:57.263 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 08:07:57.270 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 08:07:57.296 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 08:07:57.307 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 08:07:57.430 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 08:34:06.846 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 08:34:06.874 +01:00 [DBG] client1 found in database: true
+2019-11-03 08:34:06.874 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 08:34:06.881 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 08:34:06.898 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 08:34:06.905 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 08:34:06.919 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 12:13:05.504 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 12:13:05.567 +01:00 [DBG] client1 found in database: true
+2019-11-03 12:13:05.567 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 12:13:05.576 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 12:13:05.589 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 12:13:05.594 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 12:13:05.612 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:53:37.645 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 15:53:37.668 +01:00 [DBG] client1 found in database: true
+2019-11-03 15:53:37.668 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 15:53:37.672 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:53:37.680 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:53:37.685 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:53:37.695 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:53:57.528 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 15:53:57.553 +01:00 [DBG] client1 found in database: true
+2019-11-03 15:53:57.553 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 15:53:57.558 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:53:57.568 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:53:57.572 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:53:57.582 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:54:15.018 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 15:54:15.056 +01:00 [DBG] client1 found in database: true
+2019-11-03 15:54:15.056 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 15:54:15.064 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:54:15.078 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:54:15.084 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:54:15.096 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:55:00.476 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-03 15:55:00.503 +01:00 [DBG] client1 found in database: true
+2019-11-03 15:55:00.503 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-03 15:55:00.512 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:55:00.534 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-03 15:55:00.540 +01:00 [DBG] Found [] identity scopes in database
+2019-11-03 15:55:00.559 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-04 13:35:13.096 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-04 13:35:13.623 +01:00 [DBG] client1 found in database: true
+2019-11-04 13:35:13.623 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-04 13:35:13.742 +01:00 [DBG] Found [] identity scopes in database
+2019-11-04 13:35:13.753 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-04 13:35:13.761 +01:00 [DBG] Found [] identity scopes in database
+2019-11-04 13:35:13.771 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-04 13:35:14.986 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-04 13:35:17.532 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-04 13:35:17.581 +01:00 [DBG] client1 found in database: true
+2019-11-04 13:35:17.582 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-04 13:35:17.598 +01:00 [DBG] Found [] identity scopes in database
+2019-11-04 13:35:17.622 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-04 13:35:17.629 +01:00 [DBG] Found [] identity scopes in database
+2019-11-04 13:35:17.646 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-05 10:54:27.052 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-05 10:54:30.852 +01:00 [DBG] client1 found in database: true
+2019-11-05 10:54:30.852 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-05 10:54:31.156 +01:00 [DBG] Found [] identity scopes in database
+2019-11-05 10:54:31.185 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-05 10:54:31.191 +01:00 [DBG] Found [] identity scopes in database
+2019-11-05 10:54:31.204 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-05 10:54:38.289 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-05 10:54:38.307 +01:00 [DBG] client1 found in database: true
+2019-11-05 10:54:38.308 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-05 10:54:38.314 +01:00 [DBG] Found [] identity scopes in database
+2019-11-05 10:54:38.322 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-05 10:54:38.328 +01:00 [DBG] Found [] identity scopes in database
+2019-11-05 10:54:38.342 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-05 14:07:05.440 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-05 14:07:05.463 +01:00 [DBG] client1 found in database: true
+2019-11-05 14:07:05.464 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-05 14:07:05.470 +01:00 [DBG] Found [] identity scopes in database
+2019-11-05 14:07:05.487 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-05 14:07:05.493 +01:00 [DBG] Found [] identity scopes in database
+2019-11-05 14:07:05.502 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-05 14:07:06.446 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-06 12:29:00.905 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-06 12:29:00.994 +01:00 [DBG] client1 found in database: true
+2019-11-06 12:29:00.995 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-06 12:29:01.004 +01:00 [DBG] Found [] identity scopes in database
+2019-11-06 12:29:01.045 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-06 12:29:01.053 +01:00 [DBG] Found [] identity scopes in database
+2019-11-06 12:29:01.067 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-06 12:29:03.369 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-06 12:29:03.406 +01:00 [DBG] client1 found in database: true
+2019-11-06 12:29:03.410 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-06 12:29:03.423 +01:00 [DBG] Found [] identity scopes in database
+2019-11-06 12:29:03.440 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-06 12:29:03.453 +01:00 [DBG] Found [] identity scopes in database
+2019-11-06 12:29:03.469 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-06 13:15:40.799 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-06 13:15:40.832 +01:00 [DBG] client1 found in database: true
+2019-11-06 13:15:40.832 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-06 13:15:40.839 +01:00 [DBG] Found [] identity scopes in database
+2019-11-06 13:15:40.853 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-06 13:15:40.861 +01:00 [DBG] Found [] identity scopes in database
+2019-11-06 13:15:40.875 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-27 14:33:07.040 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-11-27 14:33:07.694 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2019-11-27 14:33:07.694 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-11-27 14:33:07.695 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2019-11-27 14:33:07.695 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2019-11-27 14:33:07.695 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2019-11-27 14:33:07.695 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2019-11-27 14:33:07.696 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2019-11-27 14:36:37.027 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-27 14:36:39.639 +01:00 [DBG] client1 found in database: true
+2019-11-27 14:36:39.661 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2019-11-27 14:36:40.276 +01:00 [DBG] Found [] identity scopes in database
+2019-11-27 14:36:40.423 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-27 14:36:40.454 +01:00 [DBG] Found [] identity scopes in database
+2019-11-27 14:36:40.464 +01:00 [DBG] Found ["api1"] API scopes in database
+2019-11-27 14:36:44.032 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2019-11-27 14:49:31.191 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-11-27 14:49:31.582 +01:00 [WRN] Connection processing ended abnormally.
+System.Net.Sockets.SocketException (22): Invalid argument
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|7_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.ProcessReceives()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2020-05-09 17:24:30.967 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-05-09 17:24:32.110 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-05-09 17:24:32.111 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-05-09 17:24:32.111 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-05-09 17:24:32.111 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-05-09 17:24:32.111 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-05-09 17:24:32.111 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-05-09 17:24:32.111 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-05-09 17:29:03.933 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:29:22.753 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:35:31.877 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:42:06.650 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-05-09 17:42:06.932 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-05-09 17:42:06.933 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-05-09 17:42:06.934 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-05-09 17:42:06.935 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-05-09 17:42:06.935 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-05-09 17:42:06.936 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-05-09 17:42:06.936 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-05-09 17:43:49.586 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:43:50.715 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:43:50.729 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:43:50.867 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:43:50.949 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:43:50.966 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:43:50.972 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:43:51.741 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:44:17.018 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:44:17.036 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:44:17.037 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:44:17.040 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:44:17.048 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:44:17.051 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:44:17.057 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:48:57.965 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:48:57.993 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:48:57.993 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:48:57.997 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:48:58.007 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:48:58.011 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:48:58.021 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:49:45.602 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:49:45.619 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:49:45.620 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:49:45.622 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:49:45.630 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:49:45.632 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:49:45.639 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:50:22.817 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:50:22.829 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:50:22.829 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:50:22.832 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:50:22.838 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:50:22.841 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:50:22.847 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:50:23.294 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:50:24.243 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:50:24.258 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:50:24.258 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:50:24.263 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:50:24.273 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:50:24.276 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:50:24.282 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:58:50.009 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:58:50.020 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:58:50.020 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:58:50.023 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:58:50.031 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:58:50.034 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:58:50.039 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:58:50.541 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:58:52.503 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-09 17:58:52.516 +01:00 [DBG] client1 found in database: true
+2020-05-09 17:58:52.518 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-09 17:58:52.523 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:58:52.533 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-09 17:58:52.536 +01:00 [DBG] Found [] identity scopes in database
+2020-05-09 17:58:52.544 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-10 17:03:32.861 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-05-10 17:03:33.457 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-05-10 17:03:33.458 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-05-10 17:03:33.458 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-05-10 17:03:33.458 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-05-10 17:03:33.458 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-05-10 17:03:33.458 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-05-10 17:03:33.459 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-05-10 17:04:04.146 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-10 17:04:34.364 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-10 17:04:35.398 +01:00 [DBG] client1 found in database: true
+2020-05-10 17:04:35.410 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-10 17:04:35.526 +01:00 [DBG] Found [] identity scopes in database
+2020-05-10 17:04:35.616 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-10 17:04:35.633 +01:00 [DBG] Found [] identity scopes in database
+2020-05-10 17:04:35.639 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-10 17:04:36.226 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-10 17:04:38.430 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-10 17:04:38.459 +01:00 [DBG] client1 found in database: true
+2020-05-10 17:04:38.459 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-05-10 17:04:38.464 +01:00 [DBG] Found [] identity scopes in database
+2020-05-10 17:04:38.471 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-10 17:04:38.475 +01:00 [DBG] Found [] identity scopes in database
+2020-05-10 17:04:38.483 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-05-13 16:28:19.463 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-05-13 16:28:19.987 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-05-13 16:28:19.987 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-05-13 16:28:19.987 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-05-13 16:28:19.987 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-05-13 16:28:19.988 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-05-13 16:28:19.988 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-05-13 16:28:19.988 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-05-13 16:28:23.500 +01:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use ---> System.Net.Sockets.SocketException: Address already in use
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2020-05-13 16:29:40.116 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-05-13 16:29:40.412 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-05-13 16:29:40.412 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-05-13 16:29:40.412 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-05-13 16:29:40.412 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-05-13 16:29:40.413 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-05-13 16:29:40.413 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-05-13 16:29:40.413 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-05-13 16:30:15.299 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-05-13 16:32:32.506 +01:00 [DBG] 0 persisted grants found for Community
+2020-05-14 04:40:57.736 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-05-14 04:40:58.172 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-05-14 04:40:58.172 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-05-14 04:40:58.173 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-05-14 04:40:58.173 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-05-14 04:40:58.173 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-05-14 04:40:58.174 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-05-14 04:40:58.174 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-06-10 02:06:54.602 +01:00 [WRN] No XML encryptor configured. Key "fd4ed336-d35d-4aa1-bba1-0b4b2dda19ff" may be persisted to storage in unencrypted form.
+2020-06-10 02:06:54.735 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-06-10 02:06:55.007 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-06-10 02:06:55.007 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-06-10 02:06:55.007 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-06-10 02:06:55.007 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-06-10 02:06:55.007 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-06-10 02:06:55.007 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-06-10 02:06:55.008 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-06-10 02:11:56.761 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-06-10 02:12:11.814 +01:00 [DBG] 0 persisted grants found for Community
+2020-06-10 13:52:51.703 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-06-10 13:52:51.997 +01:00 [INF] Using the default authentication scheme Community for IdentityServer
+2020-06-10 13:52:51.998 +01:00 [ERR] Authentication scheme Community is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2020-06-10 13:52:51.998 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-06-10 13:52:51.998 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-06-10 13:52:51.999 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-06-10 13:52:51.999 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-06-10 13:52:51.999 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-06-10 13:58:33.910 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2020-06-10 13:58:34.952 +01:00 [DBG] client1 found in database: true
+2020-06-10 13:58:34.965 +01:00 [DBG] client configuration validation for client client1 succeeded.
+2020-06-10 13:58:35.102 +01:00 [DBG] Found [] identity scopes in database
+2020-06-10 13:58:35.185 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-06-10 13:58:35.202 +01:00 [DBG] Found [] identity scopes in database
+2020-06-10 13:58:35.208 +01:00 [DBG] Found ["api1"] API scopes in database
+2020-06-10 13:58:36.200 +01:00 [DBG] Found ["openid","profile","admin_ui_profile","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database

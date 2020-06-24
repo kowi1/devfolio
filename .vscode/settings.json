@@ -1,0 +1,20 @@
+{
+    "ConnectionStrings": {
+      "DefaultConnection": "Data Source=app.db"
+    },
+    "Logging": {
+      "LogLevel": {
+        "Default": "Warning"
+      }
+    },
+    "AllowedHosts": "*",
+    "EmailSettings": {
+      "MailServer": "smtp.mailtrap.io",
+      "MailPort": 25,
+      "SenderName": "856ef62338efaf",
+      "Sender": "856ef62338efaf",
+      "Password": "c91e0b900a8bd6"
+  }
+  
+  }
+  
