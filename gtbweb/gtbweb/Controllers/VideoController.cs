@@ -63,7 +63,14 @@ public async Task<IActionResult> Post(IFormFile file)
     return Ok(new {filePath});
 }
    
+[  HttpGet("file")]
+   public async Task<FileStreamResult> Get(string name)
+   {
+     // var stream = await _dataservice.GetVideoByName(name);
 
+     FileStream stream= System.IO.File.OpenRead(Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot/video", "1592832323595.mp4"));
+      return new FileStreamResult(stream, "video/mp4");
+   }
 
         public IActionResult Video()
         {        

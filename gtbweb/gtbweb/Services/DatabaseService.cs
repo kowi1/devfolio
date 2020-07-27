@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc;
 using gtbweb.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +19,7 @@ namespace gtbweb.Services
         public interface IDatabaseService
         {    List<SelectListItem> GetSkills();
              Profile GetProfile(string userid);
+             //FileStream GetVideoByName(string name);
              List<ProficiencyViewModel> GetProficiency(string userid);
              List<RecentPostViewModel> GetRecentPosts(string userid);
              ServiceCollectionViewModel GetService(string userid);
