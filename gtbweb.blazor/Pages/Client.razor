@@ -8,7 +8,8 @@
 
 <h1>Get Profile</h1>
 <p>Result: @c</p>
-
+<button class="btn btn-primary" >Click me</button>
+<dropdowntext>d</dropdowntext>
 @code {
 
       String c;
@@ -16,7 +17,7 @@
     protected override async Task OnInitializedAsync()
     {
         var restClient = new HttpClient();
-        var disco= await restClient.GetDiscoveryDocumentAsync("http://localhost:5008/");
+        var disco= await restClient.GetDiscoveryDocumentAsync("http://localhost:5000/");
         
         var tokenresponse = await restClient.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
         {

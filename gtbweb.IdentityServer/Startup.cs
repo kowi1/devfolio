@@ -20,6 +20,8 @@ using gtbweb.IdentityServer.Data;
 using Microsoft.Extensions.Logging.Abstractions;
 using RSK.Audit.EF;
 using RSK.IdentityServer4.AuditEventSink;
+using IdentityServer4.Test;
+
 
 namespace gtbweb.IdentityServer
 {
@@ -53,16 +55,19 @@ namespace gtbweb.IdentityServer
 
             var connectionString = Configuration.GetConnectionString("Configuration");
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
-
+             services.AddAuthentication().AddCookie("dummy");
             var builder = services.AddIdentityServer(options =>
             {
                 options.Events.RaiseErrorEvents = true;
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
+                options.Authentication.CookieAuthenticationScheme="dummy";
             })
                 .AddAspNetIdentity<ApplicationUser>()
+                //.AddTestUsers(TestUsers.Users)
                 // this adds the config data from DB (clients, resources, CORS)
+                //.AddInMemoryClients(Config.GetClients())
                 .AddConfigurationStore(options =>
                 {
                     options.ConfigureDbContext = db =>
@@ -93,8 +98,9 @@ namespace gtbweb.IdentityServer
                 
                 builder.AddDeveloperSigningCredential();
             }
-
-            services.AddAuthentication()
+            
+           
+            /*services.AddAuthentication()
                 .AddGoogle(options =>
                 {
                     // register your IdentityServer with Google at https://console.developers.google.com
@@ -102,7 +108,9 @@ namespace gtbweb.IdentityServer
                     // set the redirect URI to http://localhost:5000/signin-google
                     options.ClientId = "copy client ID from Google here";
                     options.ClientSecret = "copy client secret from Google here";
-                });
+                });*/
+
+                
 
             services.UseAdminUI();
             services.AddScoped<IdentityExpressDbContext, SqliteIdentityDbContext>();
@@ -125,6 +133,7 @@ namespace gtbweb.IdentityServer
             app.UseIdentityServer();
             app.UseMvcWithDefaultRoute();
             app.UseAdminUI();
+            app.UseAuthentication();
         }
         
         public void ConfigureIdentityServerAuditing(IServiceCollection services, string auditConnectionString)

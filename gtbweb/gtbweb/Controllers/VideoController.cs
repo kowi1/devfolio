@@ -79,9 +79,6 @@ public async Task<IActionResult> Post(IFormFile file)
                            var videos =  _dataservice.GetVideos(_userManager.GetUserId(User));
                            ViewBag.VideoCollection = videos; 
                  }
-                 
-
-            
                 
                 return View();
         }

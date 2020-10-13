@@ -33,13 +33,13 @@ namespace gtbweb.IdentityServer
                 // client credentials flow client
                 new Client
                 {
-                    ClientId = "client1",
+                    ClientId = "client5",
                     ClientName = "Client Credentials Client",
 
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = { "api2" }
                 },
 
                 // MVC client using hybrid flow
