@@ -3081,3 +3081,24 @@ System.InvalidOperationException: The AuthorizationPolicy named: 'audit' was not
 2020-10-12 09:48:22.096 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
 2020-10-12 09:48:22.096 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
 2020-10-12 09:48:22.096 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-11-13 18:06:50.798 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-11-13 18:06:51.281 +01:00 [INF] Using explicitly configured authentication scheme dummy for IdentityServer
+2020-11-13 18:06:51.281 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-11-13 18:06:51.282 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-11-13 18:06:51.282 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-11-13 18:06:51.282 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-11-13 18:06:51.282 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-11-16 15:12:58.954 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-11-16 15:12:59.441 +01:00 [INF] Using explicitly configured authentication scheme dummy for IdentityServer
+2020-11-16 15:12:59.441 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-11-16 15:12:59.441 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-11-16 15:12:59.441 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-11-16 15:12:59.441 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-11-16 15:12:59.442 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2020-11-30 12:47:21.741 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2020-11-30 12:47:22.164 +01:00 [INF] Using explicitly configured authentication scheme dummy for IdentityServer
+2020-11-30 12:47:22.165 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2020-11-30 12:47:22.166 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2020-11-30 12:47:22.166 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2020-11-30 12:47:22.166 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2020-11-30 12:47:22.166 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid

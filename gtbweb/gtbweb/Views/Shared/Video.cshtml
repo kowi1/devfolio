@@ -1,5 +1,6 @@
+   @model gtbweb.Controllers.InputVideoModel
  @{
-    ViewData["Title"] = "Work";
+    ViewData["Title"] = "Video";
 }
  
 
@@ -19,17 +20,13 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      
       @foreach(var x in @ViewBag.VideoCollection.VideoView )
       {
-        <div class="col-md-4">
+        <div class="col-md-12">
           <div class="work-box">
-            <a href=""  data-toggle="lightbox" data-gallery="youtubevideos" >
               <div class="work-img">
-                                 <iframe width="100%" height="100%"
-src=@x.VideoFilePath>
-</iframe> 
-
+                <iframe width="960px" height="540px" src=@x.VideoFilePath></iframe> 
               </div>
               <div class="work-content">
                 <div class="row">
@@ -39,14 +36,25 @@ src=@x.VideoFilePath>
                       <span class="w-category">@x.VideoID</span> / <span class="w-date">@x.VideoLength</span>
                     </div>
                   </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
+                   <div class="row">
+                      <div class="col-sm-4">
+                        <div class="w-like">
+                         <form  method="post" asp-action="Delete" asp-controller="Video">
+                         <div class="form-group">
+                            <input asp-for="Videoid" type="hidden" value=@x.VideoID>
+                            <button type="submit"><span class="ion-ios-trash-outline"></span></button>
+                          </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="w-like">
+                            <span class="ion-ios-plus-outline"></span>
+                           </div>
+                      </div>
+                   </div>
                 </div>
               </div>
-            </a>
           </div>
         </div>
       }

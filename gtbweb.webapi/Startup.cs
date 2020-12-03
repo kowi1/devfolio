@@ -13,10 +13,12 @@ using Microsoft.EntityFrameworkCore;
 using gtbweb.Data;
 using gtbweb.Models;
 using gtbweb.Services;
+using gtbweb.webapi.Controllers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore.Proxies;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
@@ -35,6 +37,10 @@ namespace gtbweb.webapi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+             services.AddMvc(options =>
+        {
+              options.OutputFormatters.Add(new VideoOutputFormatter());
+        });
            services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -51,8 +57,10 @@ namespace gtbweb.webapi
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
                       services.AddDbContext<VideoDbContext>(options =>
-                options.UseSqlite(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                      {
+                options.UseSqlite( Configuration.GetConnectionString("DefaultConnection"));
+                options.UseLazyLoadingProxies(true);
+                      });
                    services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)    
     .AddJwtBearer(options =>    
     {    

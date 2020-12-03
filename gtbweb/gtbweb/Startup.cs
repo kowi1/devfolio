@@ -17,6 +17,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore.Proxies;
 using Microsoft.AspNetCore.Http.Features;
+using gtbweb.Services.SignalRService.Hubs;
 
 
 
@@ -34,6 +35,7 @@ namespace gtbweb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {   services.AddEntityFrameworkProxies();
+            services.AddSignalR();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -117,6 +119,11 @@ namespace gtbweb
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+            });
+             
+            app.UseSignalR(route =>
+            {
+               route.MapHub<ServiceHub>("/ServiceHub");
             });
         }
     }

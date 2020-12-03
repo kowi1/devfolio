@@ -14,6 +14,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
 namespace gtbweb.Controllers
 {
+    public class InputVideoModel
+    {
+             
+             [BindProperty]
+              public int Videoid{get;set;}
+              
+    }
     public class VideoController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -32,6 +39,11 @@ namespace gtbweb.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+        public async Task<IActionResult> Delete(InputVideoModel Input)
+        {
+            var videos = await _dataservice.DeleteVideo(Input.Videoid,_userManager.GetUserId(User));
+            return LocalRedirect(Url.Content("~/Video/Video/"));
         }
 
   //[HttpPost("UploadFiles")]
@@ -72,11 +84,11 @@ public async Task<IActionResult> Post(IFormFile file)
       return new FileStreamResult(stream, "video/mp4");
    }
 
-        public IActionResult Video()
+        public async Task<IActionResult> Video()
         {        
                  if (_signInManager.IsSignedIn(User))
                  {
-                           var videos =  _dataservice.GetVideos(_userManager.GetUserId(User));
+                           var videos = await _dataservice.GetVideos(_userManager.GetUserId(User));
                            ViewBag.VideoCollection = videos; 
                  }
                 

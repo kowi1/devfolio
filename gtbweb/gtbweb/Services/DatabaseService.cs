@@ -24,7 +24,8 @@ namespace gtbweb.Services
              List<RecentPostViewModel> GetRecentPosts(string userid);
              ServiceCollectionViewModel GetService(string userid);
              BlogCollectionViewModel GetBlogs(string userid);
-             VideoCollectionViewModel GetVideos(string userid);
+             Task<VideoCollectionViewModel> GetVideos(string userid);
+             Task<bool> DeleteVideo(int id,string userid);
              BlogCollectionViewModel SearchBlogs(string search,string userid);
              BlogCollectionViewModel SearchDateArchive(int? id,string userid);
              BlogCollectionViewModel SearchCategoryArchive(int? id,string userid);
@@ -446,7 +447,7 @@ namespace gtbweb.Services
                    query.BlogView = querys;
                    return query;
              }
-             public VideoCollectionViewModel GetVideos(string userid)
+             public async Task<VideoCollectionViewModel> GetVideos(string userid)
              {
                    IEnumerable<VideoCollection> collections = _theContext.VideoCollections;
                    IEnumerable<Service> services = _theContext.Services;
@@ -629,7 +630,17 @@ namespace gtbweb.Services
 
               return newpage.BlogPageID;
              }
-
+             public async Task<bool> DeleteVideo(int id, string user)
+             {
+                  var videocontext =  _theContext.Video;
+              var videocollectioncontext =  _theContext.VideoCollections;
+                  var videoitem =  _theContext.Video.Where(s=>s.VideoID==id ).FirstOrDefault<Video>();
+              var videocollectionitem =  _theContext.VideoCollections.Where(s=>s.VideoID==id ).FirstOrDefault<VideoCollection>();
+                  videocontext.Remove(videoitem);
+                  videocollectioncontext.Remove(videocollectionitem);
+                  _theContext.SaveChanges();
+                  return true;
+             }
              public int CreateVideo(int profileid,string filename,string filepath)
              {
               var videocontext =  _theContext.Video;

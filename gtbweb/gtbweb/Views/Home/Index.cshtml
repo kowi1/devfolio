@@ -2,6 +2,7 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
+@model gtbweb.Areas.Identity.Pages.Account.LoginModel
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -22,8 +23,14 @@
 else
 {
        <h1 class="intro-title mb-4">Get all Your Creative Works in one Portfolio.   </h1>
-       <h4 class="intro-subtitle mb-4">Easy to update. Easy to Share.</h4>
-       <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Register">Register Now</a>
+       <h4 class="intro-title mb-4">Easy to update. Easy to Share.</h4>
+      <!-- <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Register">Register Now</a>-->
+     <form method="post">
+     <button class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Use Demo Account</button>
+    <input type="hidden" asp-for="Input.Email" value="dolukowi@gmail.com" >
+     <input type="hidden" asp-for="Input.Password" value="Lastdon1!" >
+    </form>
+
 }
           
           <p class="intro-subtitle"><span class="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
