@@ -3102,3 +3102,19 @@ System.InvalidOperationException: The AuthorizationPolicy named: 'audit' was not
 2020-11-30 12:47:22.166 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
 2020-11-30 12:47:22.166 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
 2020-11-30 12:47:22.166 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2023-03-29 21:38:36.774 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2023-03-29 21:38:39.299 +01:00 [INF] Using explicitly configured authentication scheme dummy for IdentityServer
+2023-03-29 21:38:39.299 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2023-03-29 21:38:39.299 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2023-03-29 21:38:39.299 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2023-03-29 21:38:39.299 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2023-03-29 21:38:39.299 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2023-03-29 21:39:12.921 +01:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2023-03-29 21:39:13.065 +01:00 [INF] Using explicitly configured authentication scheme dummy for IdentityServer
+2023-03-29 21:39:13.065 +01:00 [DBG] Using Community as default ASP.NET Core scheme for authentication
+2023-03-29 21:39:13.065 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-in
+2023-03-29 21:39:13.065 +01:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for sign-out
+2023-03-29 21:39:13.065 +01:00 [DBG] Using Community as default ASP.NET Core scheme for challenge
+2023-03-29 21:39:13.065 +01:00 [DBG] Using Community as default ASP.NET Core scheme for forbid
+2023-03-29 21:39:56.319 +01:00 [DBG] Found ["profile","admin_ui_profile","openid","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
+2023-03-29 21:40:12.292 +01:00 [DBG] Found ["profile","admin_ui_profile","openid","admin_ui_public","admin_api","admin_ui_webhooks","api1"] as all scopes in database
