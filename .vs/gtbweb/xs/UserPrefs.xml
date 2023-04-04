@@ -1,100 +1,103 @@
 ﻿<Properties StartupConfiguration="{7B04B9EA-D6B3-4917-9399-2B431F068BD9}|Default">
-  <MonoDevelop.Ide.ItemProperties.gtbweb PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.gtbweb.blazor PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.gtbweb PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="gtbweb.webapi/apsp.db">
     <Files>
       <File FileName="gtbweb.webapi/Startup.cs" />
-      <File FileName="gtbweb/gtbweb/gtbweb.csproj.save" Line="1" Column="1" />
+      <File FileName="gtbweb/gtbweb/gtbweb.csproj.save" />
       <File FileName="gtbweb/gtbweb/Services/ActionFilters.cs" />
       <File FileName="gtbweb/gtbweb/Services/DatabaseService.cs" />
       <File FileName="gtbweb/gtbweb/Services/EmailSender.cs" />
       <File FileName="gtbweb/gtbweb/Services/SignalRService.cs" />
       <File FileName="gtbweb/gtbweb/Services/Unsplash.cs" />
-      <File FileName="gtbweb/gtbweb/Models/AboutDbContext.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/AboutInitializer.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Skill.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Video.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/VideoDbContext.cs" Line="1" Column="1" />
+      <File FileName="gtbweb/gtbweb/Models/AboutDbContext.cs" />
+      <File FileName="gtbweb/gtbweb/Models/AboutInitializer.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Skill.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Video.cs" />
+      <File FileName="gtbweb/gtbweb/Models/VideoDbContext.cs" />
       <File FileName="../../../../usr/local/share/dotnet/sdk/7.0.202/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.EolTargetFrameworks.targets" />
       <File FileName="gtbweb.blazor/appsettings.json" />
       <File FileName="gtbweb.blazor/appsettings.Development.json" />
-      <File FileName="gtbweb.blazor/Startup.cs" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Program.cs" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/App.razor" Line="1" Column="1" />
+      <File FileName="gtbweb.blazor/Startup.cs" />
+      <File FileName="gtbweb.blazor/Program.cs" />
+      <File FileName="gtbweb.blazor/App.razor" />
       <File FileName="gtbweb.webapi/Controllers/AuthenticationController.cs" />
-      <File FileName="gtbweb.webapi/Controllers/ProfileController.cs" Line="121" Column="12" />
-      <File FileName="gtbweb.blazor/Data/WeatherForecast.cs" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Data/WeatherForecastService.cs" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Pages/_Host.cshtml" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Pages/Client.razor" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Pages/Index.razor" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Pages/FetchData.razor" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Pages/Error.razor" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Pages/Counter.razor" Line="1" Column="1" />
-      <File FileName="gtbweb.blazor/Dockerfile" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/appsettings.json" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Dockerfile" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Index.cshtml" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/libman.json" Line="1" Column="1" />
+      <File FileName="gtbweb.webapi/Controllers/ProfileController.cs" />
+      <File FileName="gtbweb.blazor/Data/WeatherForecast.cs" />
+      <File FileName="gtbweb.blazor/Data/WeatherForecastService.cs" />
+      <File FileName="gtbweb.blazor/Pages/_Host.cshtml" />
+      <File FileName="gtbweb.blazor/Pages/Client.razor" />
+      <File FileName="gtbweb.blazor/Pages/Index.razor" />
+      <File FileName="gtbweb.blazor/Pages/FetchData.razor" />
+      <File FileName="gtbweb.blazor/Pages/Error.razor" />
+      <File FileName="gtbweb.blazor/Pages/Counter.razor" />
+      <File FileName="gtbweb.blazor/Dockerfile" />
+      <File FileName="gtbweb/gtbweb/appsettings.json" />
+      <File FileName="gtbweb/gtbweb/Dockerfile" />
+      <File FileName="gtbweb/gtbweb/Index.cshtml" />
+      <File FileName="gtbweb/gtbweb/libman.json" />
       <File FileName="gtbweb/gtbweb/packages-microsoft-prod.deb" />
-      <File FileName="gtbweb/gtbweb/Program.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/ScaffoldingReadme.txt" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Startup.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/VideoCollection.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Tag.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/ServiceDbContext.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/ServiceCollection.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Service.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Profile.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Proficiency.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/EmailSettings.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/DateArchive.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Comment.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/CategoryArchive.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/BlogPage.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/BlogDbContext.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/BlogCollection.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/ArchiveDbContext.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Models/Archive.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Migrations/ArchiveDb/20200116102031_ArchiveContext.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Migrations/ArchiveDb/ArchiveDbContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Migrations/BlogDb/20190406125003_BlogMigration.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Migrations/BlogDb/20190516154420_Blogdbigration1.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Migrations/BlogDb/BlogDbContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/WorkController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/VideoController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/ServiceController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/AboutController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/AdminControllers.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/ArchiveController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/BlogController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/ContactController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/PageController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Controllers/SearchController.cs" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml" Line="1" Column="1" />
-      <File FileName="gtbweb/gtbweb/Areas/Identity/Pages/Account/ResetPassword.cshtml" Line="1" Column="1" />
+      <File FileName="gtbweb/gtbweb/Program.cs" />
+      <File FileName="gtbweb/gtbweb/ScaffoldingReadme.txt" />
+      <File FileName="gtbweb/gtbweb/Startup.cs" />
+      <File FileName="gtbweb/gtbweb/Properties/launchSettings.json" />
+      <File FileName="gtbweb/gtbweb/Models/VideoCollection.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Tag.cs" />
+      <File FileName="gtbweb/gtbweb/Models/ServiceDbContext.cs" />
+      <File FileName="gtbweb/gtbweb/Models/ServiceCollection.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Service.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Profile.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Proficiency.cs" />
+      <File FileName="gtbweb/gtbweb/Models/ErrorViewModel.cs" />
+      <File FileName="gtbweb/gtbweb/Models/EmailSettings.cs" />
+      <File FileName="gtbweb/gtbweb/Models/DateArchive.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Comment.cs" />
+      <File FileName="gtbweb/gtbweb/Models/CategoryArchive.cs" />
+      <File FileName="gtbweb/gtbweb/Models/BlogPage.cs" />
+      <File FileName="gtbweb/gtbweb/Models/BlogDbContext.cs" />
+      <File FileName="gtbweb/gtbweb/Models/BlogCollection.cs" />
+      <File FileName="gtbweb/gtbweb/Models/ArchiveDbContext.cs" />
+      <File FileName="gtbweb/gtbweb/Models/Archive.cs" />
+      <File FileName="gtbweb/gtbweb/Migrations/ArchiveDb/20200116102031_ArchiveContext.cs" />
+      <File FileName="gtbweb/gtbweb/Migrations/ArchiveDb/ArchiveDbContextModelSnapshot.cs" />
+      <File FileName="gtbweb/gtbweb/Migrations/BlogDb/20190406125003_BlogMigration.cs" />
+      <File FileName="gtbweb/gtbweb/Migrations/BlogDb/20190516154420_Blogdbigration1.cs" />
+      <File FileName="gtbweb/gtbweb/Migrations/BlogDb/BlogDbContextModelSnapshot.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/WorkController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/VideoController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/ServiceController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/AboutController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/AdminControllers.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/ArchiveController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/BlogController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/ContactController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/HomeController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/PageController.cs" />
+      <File FileName="gtbweb/gtbweb/Controllers/SearchController.cs" />
+      <File FileName="gtbweb/gtbweb/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml" />
+      <File FileName="gtbweb/gtbweb/Areas/Identity/Pages/Account/ResetPassword.cshtml" />
       <File FileName="gtbweb.webapi/apsp.db" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="gtbweb" expanded="True">
-            <Node name="gtbweb.IdentityServer" selected="True" />
-          </Node>
+          <Node name="gtbweb" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="gtbweb" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.gtbweb.webapi PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.gtbweb.test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.gtbweb.IdentityServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.gtbweb.blazor PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.gtbweb.test PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
